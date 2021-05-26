@@ -38,7 +38,7 @@ def print_syntax_tree(syntax_tree, level):
     print_syntax_tree(node['children'], level + 1)
 
 
-data = reader.read('./entry/index3.html')
+data = reader.read('./entry/index.html')
 
 lexer = Lexer(data)
 tokens = lexer.parse()
